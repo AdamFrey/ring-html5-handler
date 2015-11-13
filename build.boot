@@ -1,8 +1,8 @@
 (set-env!
- :source-paths #{"src"}
- :dependencies '[[org.clojure/clojure "1.7.0"]
-                 [ring/ring-core "1.4.0"]
-                 [adzerk/bootlaces "0.1.12" :scope "test"]])
+  :source-paths #{"src"}
+  :dependencies '[[org.clojure/clojure "1.7.0" :scope "provided"]
+                  [ring/ring-core "1.4.0"]
+                  [adzerk/bootlaces "0.1.12" :scope "test"]])
 
 (require
  '[adzerk.bootlaces :refer :all]) ;; tasks: build-jar push-snapshot push-release)
