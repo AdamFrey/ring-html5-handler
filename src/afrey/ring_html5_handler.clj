@@ -13,6 +13,7 @@
     [:headers "Content-Type"]
     "text/html;charset=UTF-8"))
 
-(def handler (-> index-handler
-                 (wrap-resource "")
-                 (wrap-file dir {:index-files? false})))
+(def handler
+  (-> index-handler
+    (wrap-resource "")
+    (wrap-file dir {:index-files? false})))
