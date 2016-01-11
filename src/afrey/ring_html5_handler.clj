@@ -10,8 +10,8 @@
   "Route any unhandled requests to index.html"
   [request]
   (assoc-in (file-response (str dir "index.html"))
-            [:headers "Content-Type"]
-            "text/html;charset=ISO-8859-1"))
+    [:headers "Content-Type"]
+    "text/html;charset=UTF-8"))
 
 (def handler (-> index-handler
                  (wrap-resource "")
