@@ -3,9 +3,9 @@
 [![Clojars Project](https://clojars.org/afrey/ring-html5-handler/latest-version.svg)](https://clojars.org/afrey/ring-html5-handler)
 
 A simple ring handler for serving a site using HTML5 History
-routes. The handler serves assets from the `target` directory and
-serves `index.html` for any unmatched route, to be handled by the
-JS/CLJS router.
+routes. The handler serves assets from the resource paths, and serves
+the `index.html` resource for any unmatched route, to be handled by
+the JS/CLJS router.
 
 ## Usage
 
@@ -24,8 +24,3 @@ With [lein-ring](https://github.com/weavejester/lein-ring):
 ```
 
 Or use it with any other `ring` compatible server.
-
-## TODO
-
-- [ ] Configurable root directory path
-- [ ] Configurable root HTML file

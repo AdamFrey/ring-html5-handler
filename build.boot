@@ -5,9 +5,9 @@
                   [adzerk/bootlaces "0.1.12" :scope "test"]])
 
 (require
- '[adzerk.bootlaces :refer :all]) ;; tasks: build-jar push-snapshot push-release)
+ '[adzerk.bootlaces :refer :all]) ;; tasks: build-jar push-snapshot push-release
 
-(def +version+ "0.0.2")
+(def +version+ "1.0.0")
 
 (bootlaces! +version+)
 
