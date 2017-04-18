@@ -2,7 +2,7 @@
   (:require [ring.util.response :refer [resource-response]]
             [ring.middleware.resource :refer [wrap-resource]]))
 
-(defn- index-handler
+(defn index-handler
   "Route any unhandled html requests to index.html"
   [request]
   (let [file-type (re-find #"\.[^.]+$" (:uri request))
